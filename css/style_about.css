@@ -2,7 +2,7 @@
 
 
 :root {
-    --main: #4c9ce7;
+    --main: #e8b90d;
     --black: #111;
     --white: #fff;
     --light-color: #666;
@@ -195,7 +195,7 @@ section{
     display: none;
 }
 .active{
-    display: flex;
+    display: block;
 }
 .login-form .btn{
     width: 100%;
@@ -443,13 +443,19 @@ section{
 .first_heading.active{
     background: var(--main);
 }
-.active.first_heading i{
+.active .first_heading i{
     transform: rotate(180deg);
 }
 
-.first-content.active{
+.first.active{
     display: block;
-} 
+}
+
+.faq .first_container .first.active .first-content{
+    display: block;
+}
+
+
 
 .faq .first_container .first .first_heading{
     display: flex;
@@ -477,6 +483,54 @@ section{
     display: none;
     animation: fadeIn .2s linear;
 }
+
+.reviews .slide{
+    width: 35rem;
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.reviews .slide img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.reviews .slide h3{
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: var(--black);
+}
+
+.reviews .slide span{
+    color: var(--main);
+    font-size: 1.5rem;
+}
+
+.reviews .slide  p{
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -47,6 +47,27 @@ var swiper = new Swiper(".home-slide", {
 });
 
 
+
+
+// slide reviews //
+
+var swiper = new Swiper(".review-slider", {
+    loop:true,
+    grabCursor:true,
+    breakpoints: {
+        450: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+});
+
+
 var swiper = new Swiper(".reviews-slider", {
     loop:true,
     grabCursor:true,
@@ -67,14 +88,9 @@ var swiper = new Swiper(".reviews-slider", {
 
 // animation about //
 
-/*document.querySelectorAll('.first_container .first').forEach(first =>{
+document.querySelectorAll('.first_container .first').forEach(first =>{
     first.onclick = () => {
         first.classList.toggle('active')
     }
-})*/
+})
 
-let faq = document.querySelector('.first_container .first');
-
-document.querySelector('#faq').onclick = () =>{
-    faq.classList.add('active');
-};
