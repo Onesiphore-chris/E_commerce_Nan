@@ -490,7 +490,46 @@ section{
     background: white;
 }
 
+.newletter{
+    background: var(--main);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
+}
+.newletter .content{
+    flex: 1 1 42rem;
+}
+.newletter .content h3{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+.newletter .content p{
+    font-size: 2.2rem;
+    color: var(--white);
+}
+.newletter form{
+    flex: 1 1 42rem;
+    background: var(--white);
+    display: flex;
+    padding: .5rem;
+    border-radius: .5rem;
+   
+}
+.newletter form .email{
+    width: 100%;
+    padding: 0 1.4rem;
+    text-transform: none;
+    color: var(--light-color);
+
+}
+
+.newletter form .btn{
+    margin-top: 0;
+    border-radius: .5rem;
+}
 
 
 
@@ -684,10 +723,28 @@ section{
         .credit{
             flex-flow: column;
         }
+        .arrivals .box-container .box{
+            flex-flow: column;
+            text-align: center;
+            gap: 2rem;
+        }
+        .content form .inputBox input{
+            width: 100%;
+        }
     }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+    .newletter{
+        text-align: center;
+
+    }
+    .newletter .content{
+        font-size: 4rem;
+    }
+    .newletter .content p{
+        font-size: 1.7rem;
     }
 }
