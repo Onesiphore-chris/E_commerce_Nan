@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_commerce</title>
+</head>
+   <!-- font aweasome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- cusom css link  -->
+    <link rel="stylesheet" href="css/style_pannier.css">
+<body>
+    <!-- header start  -->
+
+ <header class="header">
+    <a href="index.html" class="logo">COL <span>Boutique's</span></a>
+
+    <div class="navbar">
+        <a href="about.html">A propos</a>
+        <a href="#pannier">pannier</a>
+        <a href="shop.html">shop</a>
+        <a href="contact.html">contacts</a>
+    </div>
+        <div class="icons">
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+            <div id="info-btn" class="fa-solid fa-circle-info"></div>
+            <div id="search-btn" class="fa-solid fa-search"></div>
+            <div id="login-btn" class="fa-solid fa-user"></div>
+        </div>
+
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here..." class="search" id="search-box">
+            <label for="" class="fas fa-search"></label>
+        </form>
+        
+        <form action="" class="login-form">
+            <h3>CONNEXION</h3>
+            <input type="email" placeholder="entrer your email" class="box">
+            <input type="password" placeholder="entrer your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">se souvenir de moi !</label>
+                <a href="#">mot de passe oublier  ?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>vous n'avez pas de compte?  <a href="inscription.html">cree un compte</a></p>
+        </form>
+ </header>
+
+ <div class="contact-info">
+    <div id="close-contact-info" class="fas fa-times"></div>
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>phone number</h3>
+        <p>+225 076 936 285 1</p>
+        <p>+225 076 936 285 1</p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>address email</h3>
+        <p>chrisleconquerant01@gmail.com</p>
+        <p>chrislorng01@gmail.com</p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-market-alt"></i>
+        <h3>office address</h3>
+        <p>Abidjan , Ivory cost , 225 jerusalem </p>
+    </div>
+
+    <div class="share">
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+    </div>
+ </div>
+    <!-- header end -->
+
+<!-- section home start !-->
+    <section class="home" id="home">
+    <div class="swiper home-slide">
+
+<div class="swiper-wrapper">
+
+  <section class="swiper-slide slide" style="background:url(images/bg.jpg) no-repeat">
+        <div class="content">
+            <h3>bienvenu Dans la Boutique COL </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit recusandae iure, 
+                porro voluptate illo itaque praesentium similique tempore adipisci.</p>
+            <a href="shop.html" class="btn">commencer</a>
+        </div>
+    </section>
+
+    <div class="swiper-button-next" ></div>
+    <div class="swiper-button-prev" ></div>
+
+    <section class="swiper-slide slide" style="background:url(images/bg-1.jpg) no-repeat">
+        <div class="content">
+            <h3>bienvenu Dans la Boutique COL </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit recusandae iure, 
+                porro voluptate illo itaque praesentium similique tempore adipisci.</p>
+            <a href="shop.html" class="btn">commencer</a>
+        </div>
+    </section>
+    
+    <div class="swiper-button-next" ></div>
+    <div class="swiper-button-prev" ></div>
+
+    <section class="swiper-slide slide" style="background:url(images/bg-2.jpg) no-repeat">
+        <div class="content">
+            <h3>bienvenu Dans la Boutique COL </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit recusandae iure, 
+                porro voluptate illo itaque praesentium similique tempore adipisci.</p>
+            <a href="shop.html" class="btn">commencer</a>
+        </div>
+    </section>
+
+
+<div class="swiper-button-next" ></div>
+<div class="swiper-button-prev" ></div>
+                </div>
+            </div>
+        </section>
+
+<!-- section home end !-->
+
+<section class="shopping-cart">
+
+    <h1 class="heading"> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/accessoire.png" alt="">
+                <div class="content">
+                    <h3>smartphone</h3>
+
+                    <form action="">
+                        <span>quantité : </span>
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                    <div class="prix">249.99$ <span>400.88$</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/batterie-2.png" alt="">
+                <div class="content">
+                    <h3>smartphone</h3>
+
+                    <form action="">
+                        <span>quantité : </span>
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                    <div class="prix">249.99$ <span>400.88$</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/maillot.webp" alt="">
+                <div class="content">
+                    <h3>smartphone</h3>
+
+                    <form action="">
+                        <span>quantité : </span>
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                    <div class="prix">249.99$ <span>400.88$</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/bracelet-2.png" alt="">
+                <div class="content">
+                    <h3>smartphone</h3>
+
+                    <form action="">
+                        <span>quantité : </span>
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                    <div class="prix">249.99$ <span>400.88$</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/tablette.png" alt="">
+                <div class="content">
+                    <h3>smartphone</h3>
+
+                    <form action="">
+                        <span>quantité : </span>
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                    <div class="prix">249.99$ <span>400.88$</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>total  : <span>$144.77</span> </h3>
+            <h3>rabais : <span>-$144.78</span> </h3>
+            <h3>total  : <span>$144.78</span> </h3>
+            <a href="" class="btn">payer</a>
+        </div>
+</section>
+
+
+
+
+<!-- footer section start  !-->
+
+
+<section class="quick" style="background: var(--black);
+display: flex;
+align-items: center;
+justify-content: space-between;">
+    <a href="index.html" class="logo"><i class="fas fa-store"><span> <b>COl</b>  Boutique's</span> </i></a>
+    <div class="navbar2">
+        <a href="about.html">A propos</a>
+        <a href="pannier.html">pannier</a>
+        <a href="shop.html">shop</a>
+        <a href="#contact">contacts</a>
+    </div>
+    <div class="share-2">
+       <a href=""><i class="fab fa-facebook"></i></a>
+       <a href=""><i class="fab fa-instagram"></i></a>
+       <a href=""><i class="fab fa-twitter"></i></a>
+       <a href=""><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+    <section class="credit">
+        <p>created By <span> Mr Chris Onesiphore Lorng </span>  all rigths reserved! </p>
+
+        <img src="" alt="">
+    </section>
+
+
+
+<!-- footer section end  !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <!-- cusdom link js  -->
+    <script src="js/script.js"></script>
+
+    <script>
+
+    lightGallery(document.querySelector('.projects .box-container'));
+
+
+    </script>
+
+
+</body>
+</html>

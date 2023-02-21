@@ -742,6 +742,160 @@ section{
 
 
 
+@media (max-width:1200px){
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 3rem 5% ;
+    }
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+    .header #menu-btn{
+        
+            display: inline-block;
+        }
+
+        .navbar{
+            position: absolute;
+            top: 99%; left: 0; right: 0;
+            background: var(--white);border-top: var(--border);
+            border-bottom: var(--border);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+            
+        }
+        .navbar.active{
+            clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
+        }
+        .navbar a{
+            display: block;
+            margin: 2rem;
+        }
+
+        
+    }
+    @media (max-width:768px){
+        .header .search-form{
+            width: 90%;
+        }
+        .header .login-form{
+            width: 90%;
+
+        }
+        .home .slide{
+            justify-content: center;
+        }
+        .home .slide .content{
+            text-align: center;
+        }
+        .home .slide h3{
+            font-size: 3rem;
+        }
+        .quick{
+            flex-flow: column;
+            text-align: center;
+
+        }
+        .navbar2{
+            padding: 2rem 0;
+        }
+        .navbar2 a{
+            display: block;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+        .share-2 a{
+            margin: 0 1rem;
+
+        }
+        .credit{
+            flex-flow: column;
+        }
+        .arrivals .box-container .box{
+            flex-flow: column;
+            text-align: center;
+            gap: 2rem;
+        }
+        .content form .inputBox input{
+            width: 100%;
+        }
+    }
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .newletter{
+        text-align: center;
+
+    }
+    .newletter .content{
+        font-size: 4rem;
+    }
+    .newletter .content p{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:320px){
+    html{
+        font-size: 40%;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+    .header .login-form{
+        width: 90%;
+
+    }
+    .home .slide{
+        justify-content: center;
+    }
+    .home .slide .content{
+        text-align: center;
+    }
+    .home .slide h3{
+        font-size: 3rem;
+    }
+    .quick{
+        flex-flow: column;
+        text-align: center;
+
+    }
+    .navbar2{
+        padding: 2rem 0;
+    }
+    .navbar2 a{
+        display: block;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .share-2 a{
+        margin: 0 1rem;
+
+    }
+    .credit{
+        flex-flow: column;
+    }
+    .arrivals .box-container .box{
+        flex-flow: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .content form .inputBox input{
+        width: 100%;
+    }
+}
+
+
+/*
 
 @media (max-width:1200px){
     .header{
@@ -825,4 +979,4 @@ section{
     html{
         font-size: 50%;
     }
-}
+}*/
