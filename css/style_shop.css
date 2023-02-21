@@ -401,11 +401,18 @@ section{
 
 /* Fin de header et sub header */
 
-.shop .box-container{
+.shop .box-container{ 
+  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3rem;
+   
 }
+.shop .box-container .box1{
+    position: absolute;
+   
+}
+
 
 .shop .box-container .box{
     padding: 2rem;
@@ -415,6 +422,9 @@ section{
     border-radius: .5rem;
     text-align: center;
     overflow: hidden;
+    position: relative;
+    
+  
 }
 
 .shop .box-container .box:hover  .hover-img{
@@ -430,7 +440,7 @@ section{
 
 .shop .box-container .box .image img{
     position: relative;
-    height: 15rem;
+    height: 17rem;
     animation: fadIn .2s linear;
     object-fit: center;
 }
@@ -441,7 +451,9 @@ section{
 .shop .box-container .box .icons{
     position: absolute;
     top: 0;
-    left: -7rem;
+    left:-7rem;
+    padding: 2rem 0;
+    right: 2rem;
 }
 .shop .box-container .box .icons a{
     display: block;

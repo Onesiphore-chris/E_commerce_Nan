@@ -454,7 +454,7 @@ section{
     transform: scale(1.1);
 }
 .box-container .box i{
-    font-size: 4.5rem;
+    font-size: 2rem;
     color: var(--main);
     padding-bottom: .7rem;
 }
@@ -520,6 +520,8 @@ section{
 
 
 *****************************************
+
+
 /* debut de new arrivage */
 
 .arrivals .box-container{
@@ -570,10 +572,10 @@ section{
     text-decoration: line-through;
 }
 
-.arrivals .box-container .content .stars{
+.arrivals .box-container .box .content .starts{
     padding: .5rem;
     color:rgb(199, 179, 5) ;
-    font-size:1.5rem ;
+    font-size: .5rem;
 }
 
 /*
