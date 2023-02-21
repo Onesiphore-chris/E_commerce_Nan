@@ -399,248 +399,58 @@ section{
     font-size: 3rem;
 }
 
-.about .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-.video{
-    width: 20px;
-}
-.content{
-    flex: 1 1 41rem;
-}
-.content h3{
-    color: var(--black);
-    text-transform: capitalize;
-    line-height: 1.5;
-}
-.content p{
-    color: var(--black);
-    text-transform: capitalize;
-    line-height: 1.5;
-}
+/* Fin de header et sub header */
 
-.box-container{
-    /*
-    margin-top: 3rem;
+.info-contact .box-container{
     display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr));
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    align-items: flex-end;
-*/
-
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    padding-right: 2rem;
 }
-.box{
-    /*
-    text-align: center;
-    background: var(--light-bg);
-    padding: 4rem 3rem;
-*/
-    border: var(--main-color);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    text-align: center;
-    padding: 3.5rem;
-}
-.box-container .box:hover {
-    transform: scale(1.1);
-}
-.box-container .box i{
-    font-size: 4.5rem;
-    color: var(--main);
-    padding-bottom: .7rem;
-}
-
-.box h3{
-    /*
-    color: var(--black);
-    text-transform: capitalize;
-    line-height: 1.5;
-    font-size: 2rem;
-*/
-    font-size: 3rem;
-    color: var(--black);
-    padding: .5rem 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-.box p{
-    color: var(--black);
-    text-transform: capitalize;
-    line-height: 1.5;
-    font-size: 2rem;
-    padding-top: .5rem;
-}
-
-
-
-***********************************
-.services{
-    background: var(--light-bg);
-}
-
-.services .box-container{
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-}
-.services .box-container .box{
-    text-align: center;
-    padding: 3rem;
+.info-contact .box-container .box{
     background: var(--white);
-    box-sizing: var(--box-shadow);
-}
-.services .box-container .box:hover img{
-    transform: translateY(-1rem)
-}
-.services .box-container .box img{
-    height: 7rem;
-    margin-bottom: .5rem;
-}
-.services .box-container .box h3{
-    padding: 1rem 0;
-    color: var(--black);
-    text-transform: capitalize;
-    font-size: 2rem;
-}
-.services .box-container .box p{
-    color: var(--black);
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    padding-top: .5rem;
-}
-
-
-*****************************************
-/* debut de new arrivage */
-
-.arrivals .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
-}
-
-.arrivals .box-container .box{
-    display: grid;
-    align-items: center;
-    padding: 2rem;
     border: var(--border);
     box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    gap: 2rem;
-    background: var(--white);
+    text-align: center;
+    padding: 2rem;
 }
-
-.arrivals .box-container .box:hover .main-img{
-    display: none;
-}
-.arrivals .box-container .box:hover .hover-img{
-    display: inline-block;
-}
-
-.arrivals .box-container .box .image img{
-    height: 10rem;
-
-}
-.hover-img{
-    display: none;
-    animation: fadIn .2s linear;
-}
-
-.arrivals .box-container .content h3{
-    font-size: 2rem;
-    color: var(--black);
-}
-.arrivals .box-container .content .price{
-    padding-top: .7rem;
-    font-size: 2rem;
-    color: var(--main);
-}
-.arrivals .box-container .content .price span{
-    color: var(--light-color);
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-
-.arrivals .box-container .content .stars{
-    padding: .5rem;
-    color:rgb(199, 179, 5) ;
-    font-size:1.5rem ;
-}
-
-/*
-.projects{
-    background: var(--black);
-}
-.projects .heading{
+.info-contact .box-container .box i{
+    height:7.5rem ;
+    width: 7.5rem;
+    line-height: 7.5rem;
+    font-size:2rem ;
+    margin-bottom: .5rem;
+    border-radius: 50%;
+    background: var(--main);
     color: var(--white);
 }
-.projects .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
-}
-.projects .box-container .box{
-    cursor: initial;
-}
-.projects .box-container  .box:hover{
-    transform:scale(1.1);
-}
-.projects .box-container .box .image:hover{
-    transform:scale(1.1);
-}
-.projects .box-container .box img:hover{
-    transform:scale(1.1);
-
-}
-.projects .box-container .box .image{
-    height: 40rem;
-    overflow: hidden;
-}
-.projects .box-container .box .image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.projects .box-container .content{
-    display: flex;
-     background: var(--white);
-    justify-content: space-between;
-}
-.projects .box-container .content .info{
-    padding: 1rem 2rem;
-}
-.projects .box-container .content .info h3{
+.info-contact .box-container .box h3{
+    font-size: 2rem;
+    padding: .5rem 0;
     color: var(--black);
-    text-transform: capitalize;
-    font-size: 1.7rem;
 }
-.projects .box-container .content .info p{
-    color: var(--black);
-    text-transform: capitalize;
+.info-contact .box-container .box p{
     font-size: 1.5rem;
-    padding-top: .5rem;
-}
-.projects .box-container .content i{
-    width: 7.5rem;
-    font-size:3rem;
-    background: var(--main);
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    line-height:7.5rem ;
+    line-height: 2;
+    color: var(--light-color);
 }
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* debut de footer */
+
 .quick .logo{
     color: white;
     font-size: 2rem;
