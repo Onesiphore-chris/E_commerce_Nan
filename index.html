@@ -39,18 +39,32 @@
             <label for="" class="fas fa-search"></label>
         </form>
         
-        <form action="" class="login-form">
+        <form action="" class="login-form" id="loginFunction" onsubmit="loginFunction()">
             <h3>CONNEXION</h3>
-            <input type="email" placeholder="entrer your email" class="box">
-            <input type="password" placeholder="entrer your password" class="box">
+            <input type="email" placeholder="entrer your email" class="box" id="email">
+            <input type="password" placeholder="entrer your password" class="box" id="password">
             <div class="flex">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me">se souvenir de moi!</label>
                 <a href="#">Mot de passse oublier  ?</a>
             </div>
-            <input type="submit" value="login now" class="btn">
+            <input type="submit" value="login now" class="btn" id="button ">
             <p>vous n'avez pas de compte?<a href="inscription.html">cree un compte?</a></p>
         </form>
+
+
+      <!--  <form action="" class="login-form" id="loginFunction">
+            <h3>CONNEXION</h3>
+            <input type="email" placeholder="entrer your email" class="box" id="email_ins">
+            <input type="password" placeholder="entrer your password" class="box" id="password_ins">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">se souvenir de moi!</label>
+                <a href="#">Mot de passse oublier  ?</a>
+            </div>
+            <input type="submit" value="login now" class="btn" id="button ">
+            <p>vous n'avez pas de compte?<a href="inscription.html">cree un compte?</a></p>
+        </form>-->
  </header>
 
  <div class="contact-info">
@@ -470,6 +484,7 @@ justify-content: space-between;">
 
  <!-- cusdom link js  -->
     <script src="js/script.js"></script>
+    <script src="js/script_inscription.js"></script>
 
     <script>
 

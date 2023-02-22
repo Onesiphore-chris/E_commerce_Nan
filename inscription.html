@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <form class="form " id="addForm" onsubmit="signUp(event);">
+        <form class="form " id="addForm" onclick="addForm(event)">
 
           <div class="form--header-container">
             <h1 class="form--header-title">
@@ -27,7 +27,8 @@
           <input type="email" placeholder="Email"  name="email" id="email" required/>
           <input type="password" placeholder="Password" name="password" id="password" required/>
             </div>
-          <button class="form__btn" id="btn-1">inscription</button>
+          <button class="form__btn" id="btnE">inscription</button>
+          <div class="form__btn" id="btn-2">Connexion</div>
 
         </form>
         <div class="info"></div>
