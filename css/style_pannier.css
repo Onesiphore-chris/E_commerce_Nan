@@ -124,7 +124,14 @@ section{
 .header .logo span{
     color: var(--main);
 }
-
+.header .card{
+    font-size: 2rem;
+    color: var(--main);
+}
+.header .card span{
+    color: var(--black);
+    font-size: 1.5rem;
+}
 .navbar a{
     font-size: 2rem;
     margin: 0 1rem;

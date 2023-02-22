@@ -77,7 +77,7 @@ var data = JSON.parse(user);
 
 console.log(data);
 
-if(user == null ){
+if(user != null ){
     result.innerHTML = 'mauvais email';
 }else if(email == data.email && password == data.password){
         result.innerHTML = 'connecter'
