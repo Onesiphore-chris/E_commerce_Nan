@@ -5,18 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
     <link rel="stylesheet" href="css/style_inscription.css">
 
     <title>E_commerce</title>
 </head>
 <body>
     <main>
-        <form class="form " onsubmit="signup()">
+        <form class="form " id="addForm" onsubmit="signUp(event);">
+
           <div class="form--header-container">
             <h1 class="form--header-title">
              Information personnel
@@ -27,12 +23,14 @@
             </p>
           </div>
           <div class="input-box">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
+          <input type="text" placeholder="Name" name="username" id="username" required/>
+          <input type="email" placeholder="Email"  name="email" id="email" required/>
+          <input type="password" placeholder="Password" name="password" id="password" required/>
             </div>
           <button class="form__btn" id="btn-1">inscription</button>
+
         </form>
+        <div class="info"></div>
       </main>
 <!-- footer section start  !-->
 
@@ -62,22 +60,9 @@ justify-content: space-between;">
     </section>
 <!-- footer section end  !-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
  <!-- cusdom link js  -->
 
     <script src="js/script_inscription.js"></script>
-    <script src="js/script.js"></script>
-
-    <script>
-
-    lightGallery(document.querySelector('.projects .box-container'));
-
-
-    </script>
 
 
 </body>
