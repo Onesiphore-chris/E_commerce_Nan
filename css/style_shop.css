@@ -726,6 +726,11 @@ section{
         font-size: 1.7rem;
     }
 }
+@media (max-width:378px){
+    html{
+        font-size: 40%;
+    }
+}
 
 @media (max-width:320px){
     html{
@@ -774,6 +779,11 @@ section{
     }
     .content form .inputBox input{
         width: 100%;
+    }
+}
+@media (max-width:242px){
+    html{
+        font-size: 30%;
     }
 }
 

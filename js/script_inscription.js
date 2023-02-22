@@ -1,6 +1,6 @@
 
 function addForm(e){
-    event.preventDefault;
+  
 
 
     var username = document.getElementById('username').value;
@@ -17,10 +17,10 @@ function addForm(e){
 
     console.log('user added');
     
-    if(card == true){
+    if(card){
         card.push(user);
         localStorage.setItem("username", JSON.stringify(card));
-        console.log(red);
+        console.log(card);
     }else{
         card = [];
         card.push(user);
