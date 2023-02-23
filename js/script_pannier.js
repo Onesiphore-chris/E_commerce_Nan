@@ -9,7 +9,7 @@ fetch("product.json").then(function(data){
         localStorage.setItem("card", "[]");
     }
 
-
+    console.log(card);
 });
 
 

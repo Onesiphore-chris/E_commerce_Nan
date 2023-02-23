@@ -141,6 +141,7 @@ let done = [
     for(let i = 0; i < done.length; i++){
    
     const element = done[i];
+    
     // console.log(done[i]);
     let affiche = ` <div class="box">
 
@@ -149,7 +150,7 @@ let done = [
     <img src="${done[i].photoB}" class="hover-img" alt="${done[i].name}">
     </div>
     <div class="icons">
-    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-shopping-cart" onclick="shop" id="shopD"></a>
     <a href="#" class="fas fa-search-plus"></a>
     <a href="#" class="fas fa-heart"></a>
     <a href="#" class="fas fa-share"></a>
@@ -180,14 +181,14 @@ recup.innerHTML += affiche;
 }
 
 
-function btnP(e){
-    event.preventDefault();
-    let addP = document.querySelectorAll('.btnP');
+function shop(){
+    
+    let shopD = document.querySelectorAll('.shopD');
 
-addP.addEventListener("click", ()=> {
-    window.location.href = "../pannier.html";
+    shopD.addEventListener("click", ()=> {
+        e.preventDefault();
 })
-
+    console.log(shopD);
 }
 
 
