@@ -1,10 +1,10 @@
 
 let done = [
     {
-        id:1,
+        id: 1,
         name: 'Smartphones',
-        rade: 13334,
-        radeB: 'ajouter',
+        rade: 13.33,
+        addJ: 'ajouter',
         photo:'images/telephone-2.png',
         photoB:'images/telephone.png'
     },
@@ -13,7 +13,7 @@ let done = [
         id: 2,
         name: 'Ordinateur',
         rade: 14,
-       radeB: 'ajouter',
+        addJ: 'ajouter',
         photo:'images/ordi.png',
         photoB:'images/ordinateur.png'
     },
@@ -22,7 +22,7 @@ let done = [
         id: 3,
         name: 'Bracelets',
         rade: 1345,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/bracelet.png',
         photoB:'images/bracelet-2.png'
     },
@@ -31,34 +31,42 @@ let done = [
         id: 4,
         name: 'Costumes',
         rade: 1314,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/costume-2.webp',
         photoB:'images/costume.webp'
+    },
+    {
+        id: 5,
+        name: 'sac',
+        rade: 1314,
+       addJ: 'ajouter',
+        photo:'images/sac.png',
+        photoB:'images/sac-2.png'
     },
 
     {
         id: 7,
-        name: 'Tablette',
+        name: 'Sac à Dos ',
         rade: 10,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/chaussure-2.png',
         photoB:'images/chaussure.png'
     },
 
     {
         id: 8,
-        name: 'Sac à Dos',
+        name: 'Chaussures de femme',
         rade: 234,
-        radeB: 1333,
+        addJ: 'ajouter',
         photo:'images/chaussure-femme-2.webp',
         photoB:'images/chaussure-2.jpg'
     },
 
     {
         id: 9,
-        name: 'Piano',
+        name: 'Tablette',
         rade: 16,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/tablette.png',
         photoB:'images/tablette-2.png'
     },
@@ -67,25 +75,25 @@ let done = [
         id: 10,
         name: 'Batterie',
         rade: 154,
-       radeB: 'ajouter',
-        photo:'',
-        photoB:''
+       addJ: 'ajouter',
+        photo:'images/batterie.png',
+        photoB:'images/batterie-2.png'
     },
 
     {
         id: 11,
         name: 'Pneu',
         rade: 124,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/sac.png',
         photoB:'images/sac-2.png"'
     },
 
     {
         id: 12,
-        name: 'Sony ps3',
+        name: 'Piano ',
         rade: 34,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/piano-2.png',
         photoB:'images/piano.png'
     },
@@ -94,7 +102,7 @@ let done = [
         id: 13,
         name: 'batterie',
         rade: 14,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/batterie-2.png',
         photoB:'images/batterie.png'
     },
@@ -103,7 +111,7 @@ let done = [
         id: 14,
         name: 'chargeur',
         rade: 13,
-        radeB: 'ajouter',
+        addJ: 'ajouter',
         photo:'images/chargeur-2.png',
         photoB:'images/chargeur3.png'
     },
@@ -112,15 +120,25 @@ let done = [
         id: 15,
         name: ' Malettes X-box',
         rade: 13,
-       radeB: 'ajouter',
+       addJ: 'ajouter',
         photo:'images/malette-2.png',
         photoB:'images/mallette.jpg'
     },
+    {
+        id: 3,
+        name: 'Sony ps3 ',
+        rade: 13,
+         addJ: 'ajouter',
+        photo:'images/malette-2.png',
+        photoB:'images/mallette.jpg'
+    },
+    
    
 ];
 
     let recup = document.getElementById('recup');
-for(let i = 0; i < done.length; i++) {
+
+    for(let i = 0; i < done.length; i++) {
    
     const element = done[i];
     console.log(done[i]);
@@ -139,7 +157,7 @@ for(let i = 0; i < done.length; i++) {
     <div class="content">
     <h3>${done[i].name}</h3>
     <div class="price">
-    ${done[i].rade} <span> ${done[i].raceB}</span>
+    ${done[i].rade} <span>${done[i].addJ}</span>
     </div>
     <div class="stars">
     <i class="fas fa-star"></i>
@@ -154,6 +172,5 @@ for(let i = 0; i < done.length; i++) {
 
 let box = document.querySelector('.box-container')
 recup.innerHTML += affiche;
-
 
 }

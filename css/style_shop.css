@@ -495,9 +495,12 @@ section{
 }
 
 .shop .box-container .box .content .price span{
-    text-decoration: line-through;
+    background: var(--main);
     font-size: 1.5rem;
     color: var(--light-color);
+    height: 4rem;
+    width: 5rem;
+    border-radius: .5rem;
 }
 
 .shop .box-container .box .content .stars{

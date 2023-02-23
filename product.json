@@ -1,0 +1,118 @@
+
+    {
+         "    id": 1,
+      "  name": "Smartphones",
+      "  rade": 13.33,
+       " quantity" : 1,
+        "photo ":"images/telephone-2.png"
+    },
+
+    {
+     " id": 2,
+      "  name": "Ordinateur",
+      "  rade": 14,
+      " quantity": 1,
+        "photo ":"images/ordi.png"
+    },
+
+    {
+    "    id": 3,
+      "  name": "Bracelets",
+      "  rade": 1345,
+      " quantity": 1,
+        "photo ":"images/bracelet.png"
+    },
+
+    {
+    "    id": 4,
+      "  name": "Costumes",
+      "  rade": 1314,
+      " quantity": 1,
+        "photo ":"images/costume-2.webp"
+    },
+    {
+    "    id": 5,
+      "  name": "sac",
+      "  rade": 1314,
+      " quantity": 1,
+        "photo ":"images/sac.png"
+    },
+
+    {
+    "    id": 7,
+      "  name": "Sac à Dos ",
+      "  rade": 10,
+      " quantity": 1,
+        "photo ":"images/chaussure-2.png"
+    },
+
+    {
+    "    id": 8,
+      "  name": "Chaussures de femme",
+      "  rade": 234,
+       " quantity": 1333,
+        "photo ":"images/chaussure-femme-2.webp"
+    },
+
+    {
+    "    id": 9,
+      "  name": "Tablette",
+      "  rade": 16,
+      " quantity": 1,
+        "photo ":"images/tablette.png"
+    },
+
+    {
+    "    id": 10,
+      "  name": "Batterie",
+      "  rade": 154,
+      " quantity": 1,
+        "photo ":"images/batterie.png"}
+
+    {
+    "    id": 11,
+      "  name": "Pneu",
+      "  rade": 124,
+      " quantity": 1,
+        "photo ":"images/sac.png"
+    },
+
+    {
+    "    id": 12,
+      "  name": "Piano ",
+      "  rade": 34,
+      " quantity": 1,
+        "photo ":"images/piano-2.png"
+    },
+
+    {
+    "    id": 13,
+      "  name": "batterie",
+      "  rade": 14,
+      " quantity": 1,
+        "photo ":"images/batterie-2.png"
+    },
+
+    {
+    "    id": 14,
+      "  name": "chargeur",
+      "  rade": 13,
+       " quantity": 1,
+        "photo ":"images/chargeur-2.png"
+    },
+
+    {
+     "  id": 15,
+      "  name": " Malettes X-box",
+      "  rade": 13,
+      " quantity": 1,
+        "photo ":"images/malette-2.png"
+    },
+    {
+        " id": 3,
+      "  name": "Sony ps3 ",
+      "  rade": 13,
+      " quantity": 1,
+        "photo ":"images/malette-2.png"
+    },
+    
