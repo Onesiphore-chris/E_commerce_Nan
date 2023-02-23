@@ -51,4 +51,4 @@ log.addEventListener("click", () =>{
 
     
 }
-loginFunction()
+loginFunction();

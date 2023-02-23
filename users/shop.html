@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_commerce</title>
+</head>
+   <!-- font aweasome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- cusom css link  -->
+    <link rel="stylesheet" href="../css/style_shop.css">
+<body>
+    <!-- header start  -->
+
+ <header class="header">
+    <a href="index.html" class="logo">COL <span>Entreprise</span></a>
+
+    <div class="navbar">
+        <a href="about.html">A propos</a>
+        <a href="pannier.html">pannier</a>
+        <a href="#shop">shop</a>
+        <a href="contact.html">contacts</a>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-cart-shopping" ><span>()</span></i>
+     </div>
+        <div class="icons">
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+            <div id="info-btn" class="fa-solid fa-circle-info"></div>
+            <div id="search-btn" class="fa-solid fa-search"></div>
+            <div id="login-btn" class="fa-solid fa-user"></div>
+        </div>
+
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here..." class="search" id="search-box">
+            <label for="" class="fas fa-search"></label>
+        </form>
+        
+        <form action="" class="login-form">
+            <h3>CONNEXION</h3>
+            <input type="email" placeholder="entrer your email" class="box">
+            <input type="password" placeholder="entrer your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">se souvenir de moi !</label>
+                <a href="#">mot de passe oublier ?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>vous n'avez pas de compte ?<a href="inscription.html"> cree un compte</a></p>
+        </form>
+ </header>
+
+ <div class="contact-info">
+    <div id="close-contact-info" class="fas fa-times"></div>
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>phone number</h3>
+        <p>+225 076 936 285 1</p>
+        <p>+225 076 936 285 1</p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>address email</h3>
+        <p>chrisleconquerant01@gmail.com</p>
+        <p>chrislorng01@gmail.com</p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-market-alt"></i>
+        <h3>office address</h3>
+        <p>Abidjan , Ivory cost , 225 jerusalem </p>
+    </div>
+
+    <div class="share">
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+    </div>
+ </div>
+    <!-- header end -->
+
+<!-- section home start !-->
+<!-- section home end !-->
+
+<!-- section shopping start !-->
+
+    <section class="shop">
+        <h1 class="heading">Liste <span>Produits</span></h1>
+
+            <div class="box-container" data_id="1" id="recup">
+                  <div class="box">
+                   
+                  <!--    <div class="image">
+                            <img src="images/telephone-2.png" class="main-img" alt="">
+                            <img src="images/telephone.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Smartphones</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+             
+                    
+                <div class="box" data_id="2">
+                        <div class="image">
+                            <img src="images/ordi.png" class="main-img" alt="">
+                            <img src="images/ordinateur.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Ordinateur</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="3">  
+                        <div class="image">
+                            <img src="images/bracelet.png" class="main-img" alt="">
+                            <img src="images/bracelet-2.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Bracelets</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="4">
+                        <div class="image">
+                            <img src="images/costume-2.webp" class="main-img" alt="">
+                            <img src="images/costume.webp" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Costumes</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="5">
+                        <div class="image">
+                            <img src="images/chaussure-2.png" class="main-img" alt="">
+                            <img src="images/chaussure.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Chaussures</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="6">
+                        <div class="image">
+                            <img src="images/chaussure-femme-2.webp" class="main-img" alt="">
+                            <img src="images/chaussure-2.jpg" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">chaussures femmes</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box"data_id="7">
+                        <div class="image">
+                            <img src="images/tablette.png" class="main-img" alt="">
+                            <img src="images/tablette-2.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Tablette</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="8">
+                        <div class="image">
+                            <img src="images/sac.png" class="main-img" alt="">
+                            <img src="images/sac-2.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Sac à Dos</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image" data_id="9">
+                            <img src="images/piano-2.png" class="main-img" alt="">
+                            <img src="images/piano.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Piano</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="10">
+                        <div class="image" >
+                            <img src="images/batterie-2.png" class="main-img" alt="">
+                            <img src="images/batterie.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Batterie</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="11">
+                        <div class="image">
+                            <img src="images/chargeur-2.png" class="main-img" alt="">
+                            <img src="images/chargeur3.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Chargeurs</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                   <div class="box" data_id="12">
+                        <div class="image">
+                            <img src="images/pneu.png" class="main-img" alt="">
+                            <img src="images/pneu-2.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Pneu</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="13">
+                        <div class="image">
+                            <img src="images/sony-2.webp" class="main-img" alt="">
+                            <img src="images/sony.png" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Sony ps3</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="14">
+                        <div class="image">
+                            <img src="images/maillot-2.png" class="main-img" alt="">
+                            <img src="images/maillot.webp" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">maillot football</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box" data_id="15">
+                        <div class="image">
+                            <img src="images/malette-2.png" class="main-img" alt="">
+                            <img src="images/mallette.jpg" class="hover-img" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-search-plus"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+    
+                        <div class="content">
+                            <h3 class="nom">Malettes X-box</h3>
+                            <div class="price">
+                                345£ <span> 450£</span>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>-->  
+                
+            </div>
+    </section>
+
+
+
+
+<!-- section shopping end !-->
+
+
+
+<!-- footer section start  !-->
+
+
+<section class="quick" style="background: var(--black);
+display: flex;
+align-items: center;
+justify-content: space-between;">
+    <a href="" class="logo"><i class="fas fa-store"><span> <b>COl</b>  Boutique's</span> </i></a>
+    <div class="navbar2">
+        <a href="">A propos</a>
+        <a href="">services</a>
+        <a href="">shop</a>
+        <a href="">contacts</a>
+    </div>
+    <div class="share-2">
+       <a href=""><i class="fab fa-facebook"></i></a>
+       <a href=""><i class="fab fa-instagram"></i></a>
+       <a href=""><i class="fab fa-twitter"></i></a>
+       <a href=""><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+    <section class="credit">
+        <p>created By <span> Mr Chris Onesiphore Lorng </span>  all rigths reserved! </p>
+
+        <img src="" alt="">
+    </section>
+
+
+
+<!-- footer section end  !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <!-- cusdom link js  -->
+    <script src="js/script.js"></script>
+    <script src="js/script_inscription.js"></script>
+    <script src="js/script_cart.js"></script>
+
+    <script>
+
+    lightGallery(document.querySelector('.projects .box-container'));
+
+
+    </script>
+
+
+</body>
+</html>

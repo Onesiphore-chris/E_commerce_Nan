@@ -1,32 +1,47 @@
 
 function addForm(){
   
-    var username = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
 
-    var user ={
-        email: email,
-        username: username,
-        password: password,
-    };
+    let form = document.querySelector('#addForm');
+    let log = document.getElementById("btnE")
+    var username = document.getElementById('username');
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
 
-    let card =JSON.parse(localStorage.getItem(username)); 
-    let isFound = false;
-    console.log('user added');
+   
+    form.addEventListener('click', (e)=>{
+        e.preventDefault();
+    })
+
+    log.addEventListener("click", ()=>{
+        let card =JSON.parse(localStorage.getItem("username")); 
+        let isFound = false;
+        console.log(card);
+        var user ={
+            email: email.value,
+            username: username.value,
+            password: password.value,
+        };
+        if(card != null){
+            console.log(card)
+            card.push(user);
+            localStorage.setItem("username", JSON.stringify(card));
+            isFound = true
+            console.log("ok");
+        }else{
+            card = [];
+            card.push(user);
+            localStorage.setItem("username", JSON.stringify(card));
+             isFound = true
+          
+        }
+        console.log(isFound)
     
-    if(card){
-        card.push(user);
-        localStorage.setItem("username", JSON.stringify(card));
-        isFound = true
-    }else{
-        card = [];
-        card.push(user);
-        localStorage.setItem("username", JSON.stringify(card));
-         isFound = true
-    }
-
-    if(isFound === true){
-        window.location.href="../login.html";
-    }
+        if(isFound === true){
+            window.location.href="../login.html";
+        }
+    })
+   
 }
+
+addForm();
