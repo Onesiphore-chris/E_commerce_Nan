@@ -138,10 +138,10 @@ let done = [
 
     let recup = document.getElementById('recup');
 
-    for(let i = 0; i < done.length; i++) {
+    for(let i = 0; i < done.length; i++){
    
     const element = done[i];
-    console.log(done[i]);
+    // console.log(done[i]);
     let affiche = ` <div class="box">
 
     <div class="image">
@@ -157,7 +157,7 @@ let done = [
     <div class="content">
     <h3>${done[i].name}</h3>
     <div class="price">
-    ${done[i].rade} <span>${done[i].addJ}</span>
+    ${done[i].rade}<button onclick ="btnP" class"btnP">ajouter</button>
     </div>
     <div class="stars">
     <i class="fas fa-star"></i>
@@ -170,7 +170,32 @@ let done = [
 </div>`;
 
 
+
+
+
+
 let box = document.querySelector('.box-container')
 recup.innerHTML += affiche;
 
 }
+
+
+function btnP(e){
+    event.preventDefault();
+    let addP = document.querySelectorAll('.btnP');
+
+addP.addEventListener("click", ()=> {
+    window.location.href = "../pannier.html";
+})
+
+}
+
+
+// addP.forEach(clic => clic.addEventListener("click", (e) =>{
+//         console.log(clic);
+
+// }));
+// addP.forEach(element => element.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//         console.log(e) 
+// })); 
