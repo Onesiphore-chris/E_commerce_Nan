@@ -6,7 +6,9 @@ let done = [
         rade: '13.33$',
         addJ: '123$',
         photo:'images/telephone-2.png',
-        photoB:'images/telephone.png'
+        photoB:'images/telephone.png',
+        qty:''
+     
     },
 
     {
@@ -15,7 +17,8 @@ let done = [
         rade: '14$',
         addJ: '123$',
         photo:'images/ordi.png',
-        photoB:'images/ordinateur.png'
+        photoB:'images/ordinateur.png',
+        qty:''
     },
 
     {
@@ -24,7 +27,8 @@ let done = [
         rade: '13.45$',
        addJ: '123$',
         photo:'images/bracelet.png',
-        photoB:'images/bracelet-2.png'
+        photoB:'images/bracelet-2.png',
+        qty:''
     },
 
     {
@@ -33,7 +37,8 @@ let done = [
         rade: '1314$',
        addJ: '123$',
         photo:'images/costume-2.webp',
-        photoB:'images/costume.webp'
+        photoB:'images/costume.webp,',
+        qty:''
     },
     {
         id: 5,
@@ -41,7 +46,8 @@ let done = [
         rade: '1314$',
        addJ: '123$',
         photo:'images/sac.png',
-        photoB:'images/sac-2.png'
+        photoB:'images/sac-2.png',
+        qty:''
     },
     {
         id: 6,
@@ -49,7 +55,8 @@ let done = [
         rade: '134$',
        addJ: '123$',
         photo:'images/maillot.webp',
-        photoB:'images/maillot-2.png'
+        photoB:'images/maillot-2.png',
+        qty:''
     },
 
 
@@ -59,7 +66,8 @@ let done = [
         rade: '10$',
        addJ: '123$',
         photo:'images/chaussure-2.png',
-        photoB:'images/chaussure.png'
+        photoB:'images/chaussure.png',
+        qty:''
     },
 
     {
@@ -68,7 +76,8 @@ let done = [
         rade: '234$',
         addJ: '123$',
         photo:'images/chaussure-femme-2.webp',
-        photoB:'images/chaussure-2.jpg'
+        photoB:'images/chaussure-2.jpg',
+        qty:''
     },
 
     {
@@ -77,7 +86,8 @@ let done = [
         rade: '16$',
        addJ: '123$',
         photo:'images/tablette.png',
-        photoB:'images/tablette-2.png'
+        photoB:'images/tablette-2.png',
+        qty:''
     },
 
     {
@@ -86,7 +96,8 @@ let done = [
         rade: '154$',
        addJ: '123$',
         photo:'images/batterie.png',
-        photoB:'images/batterie-2.png'
+        photoB:'images/batterie-2.png',
+        qty:''
     },
 
     {
@@ -95,7 +106,8 @@ let done = [
         rade: '124$',
        addJ: '123$',
         photo:'images/sac.png',
-        photoB:'images/sac-2.png"'
+        photoB:'images/sac-2.png',
+        qty:''
     },
 
     {
@@ -104,8 +116,9 @@ let done = [
         rade: '34$',
        addJ: '123$',
         photo:'images/piano-2.png',
-        photoB:'images/piano.png'
-    },
+        photoB:'images/piano.png',
+        qty:''
+  },
 
     {
         id: 13,
@@ -113,7 +126,8 @@ let done = [
         rade: '14$',
        addJ: '123$',
         photo:'images/batterie-2.png',
-        photoB:'images/batterie.png'
+        photoB:'images/batterie.png',
+        qty:''
     },
 
     {
@@ -122,7 +136,8 @@ let done = [
         rade: '13$',
         addJ: '123$',
         photo:'images/chargeur-2.png',
-        photoB:'images/chargeur3.png'
+        photoB:'images/chargeur3.png',
+        qty:''
     },
 
     {
@@ -131,7 +146,8 @@ let done = [
         rade: '13$',
        addJ: '123$',
         photo:'images/malette-2.png',
-        photoB:'images/mallette.jpg'
+        photoB:'images/mallette.jpg',
+        qty:''
     },
     {
         id: 3,
@@ -139,7 +155,8 @@ let done = [
         rade: '13$',
          addJ: '123$',
         photo:'images/sony.png',
-        photoB:'images/sony-2.webp'
+        photoB:'images/sony-2.webp',
+        qty:''
     },
     
    
@@ -159,15 +176,15 @@ let done = [
     <img src="${done[i].photoB}" class="hover-img" alt="${done[i].name}">
     </div>
     <div class="icons">
-    <a href="#" class="fas fa-shopping-cart" id="shopping">${done[i].id}</a>
+    <a href="#" class="fas fa-shopping-cart" id="shopping" onclick="buttonClick">${done[i].qty}</a>
     <a href="#" class="fas fa-search-plus"></a>
     <a href="#" class="fas fa-heart"></a>
     <a href="#" class="fas fa-share"></a>
     </div>
     <div class="content">
-    <h3>${done[i].name}</h3>
+    <h3 class="nomprod">${done[i].name}</h3>
     <div class="price">
-    ${done[i].rade}<button onclick ="" class"btnP">${done[i].addJ   }</button>
+    ${done[i].rade}<button >${done[i].addJ}</button>
     </div>
     <div class="stars">
     <i class="fas fa-star"></i>
@@ -192,35 +209,60 @@ recup.innerHTML += affiche;
 
 
 
+ function buttonClick(){
+
 
 const getCart = id => cart.indexOf(cart.find(done => done.id === id));
 
-
-let shopping = document.getElementById('shopping');
+let shopping = document.querySelectorAll('.fa-shopping-cart');
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
-const popCart = () =>{
-    $("header .card .fa-cart-shopping span").text(cart.reduce((accu, done) => accu += done.qty));
-   
-}
-popCart();
 
-    
-shopping.addEventListener('click', () =>{
-    const addToCart = id =>{
-        if(cart.length > 0){
-             getIndex(id) > -1 ? cart[getIndex(id)].qty +=1  : cart.push({
-                id,qty: 1
-             });
+    shopping.forEach(element => element.addEventListener('click', (e) =>{
+        e.preventDefault();
+        let parent = element.closest(".box");
+        let nomprod = parent.querySelector(".content h3");
+        let nomImage = parent.querySelector(".image .main-img");
+        let nomPrice = parent.querySelector(".content .price");
+
+        const myObjet  ={
+            nomprod : nomprod.textContent,
+            nomImage: nomImage.src,
+            nomPrice: nomPrice.textContent
         }
-        else{
-            cart.push({
-                id,qty: 1
-             });
-        }
-       localStorage.getItem('cart' , JSON.stringify(cart));
+
+        console.log();
         
-    }
-})
+    let objet = localStorage.getItem('myObjet');
+            if(objet == null){
+                objet = [];
+                objet.push(myObjet);
+                window.localStorage.setItem("myObjet", JSON.stringify(objet));
+            }else{
+                objet = JSON.parse(objet);
+                objet.push(myObjet);
+                window.localStorage.setItem("myObjet", JSON.stringify(objet));
+
+            }
+        console.log(cart);
+
+    }));
+
+}
+ buttonClick();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

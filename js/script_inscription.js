@@ -23,7 +23,7 @@ function addForm(){
             password: password.value,
         };
         if(card != null){
-            console.log(card)
+            console.log(card )
             card.push(user);
             localStorage.setItem("username", JSON.stringify(card));
             isFound = true
