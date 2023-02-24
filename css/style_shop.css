@@ -661,8 +661,15 @@ section{
             clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
         }
         .navbar a{
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             margin: 2rem;
+            color: var(--white);
+            background: var(--black);
+            width: 20%;
+            border-radius: .9rem;
+            text-align: center;
         }
        
 
