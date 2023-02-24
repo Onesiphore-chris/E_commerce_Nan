@@ -214,8 +214,8 @@ function recuP(){
 
 
        action = JSON.parse(action);
-
-       let count = action.length;
+       let count = action?.length;
+    
 
        localStorage.getItem(count);
 
@@ -230,7 +230,8 @@ function recuP(){
     }
 
    
-   }
+   } 
+
 recuP()
 
 
@@ -273,33 +274,24 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
 
     }));
 
-
-
-
 }
  buttonClick();
 
 
 
 
-    
 
 
+ 
+ function geTotal(){
+    let temp = objet.map(function(done){
+        return parseFloat(done.rade);
+    });
 
+    let sum = temp.reduce(function(prev, next){
+        return prev + next;  
+    }, 0);
 
-
-
-
-
-
-
-
-
-// addP.forEach(clic => clic.addEventListener("click", (e) =>{
-//         console.log(clic);
-
-// }));
-// addP.forEach(element => element.addEventListener('click',(e)=>{
-//     e.preventDefault();
-//         console.log(e) 
-// })); 
+    console.log(sum);
+}
+    getTotal(); 

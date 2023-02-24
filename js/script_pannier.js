@@ -1,4 +1,103 @@
-fetch("product.json").then(function(response){
+
+
+function recuP(){
+
+    let action = localStorage.getItem('myObjet');
+
+    let ajout = document.getElementById('pannier');
+
+
+       action = JSON.parse(action);
+       let count = action?.length;
+    
+
+       localStorage.getItem(count);
+
+       if(action  == null){
+           ajout.textContent = 0;
+
+       }else{
+           count = action.length;
+           ajout.textContent = count;  
+
+        
+    }
+
+   
+   } 
+
+recuP()
+
+
+ function buttonClick(){
+
+
+const getCart = id => cart.indexOf(cart.find(done => done.id === id));
+
+let shopping = document.querySelectorAll('.fa-shopping-cart');
+let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+
+    shopping.forEach(element => element.addEventListener('click', (e) =>{
+        e.preventDefault();
+        let parent = element.closest(".box");
+        let nomprod = parent.querySelector(".content h3");
+        let nomImage = parent.querySelector(".image .main-img");
+        let nomPrice = parent.querySelector(".content .price");
+
+        const myObjet  ={
+            nomprod : nomprod.textContent,
+            nomImage: nomImage.src,
+            nomPrice: nomPrice.textContent
+        }
+
+        console.log();
+        
+    let objet = localStorage.getItem('myObjet');
+            if(objet == null){
+                objet = [];
+                objet.push(myObjet);
+                window.localStorage.setItem("myObjet", JSON.stringify(objet));
+                recuP();
+            }else{
+                objet = JSON.parse(objet);
+                objet.push(myObjet);
+                window.localStorage.setItem("myObjet", JSON.stringify(objet));
+                recuP();
+
+            }
+
+    }));
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fetch("product.json").then(function(response){
     return response.json();
 });
 
@@ -9,7 +108,6 @@ fetch("product.json").then(function(data){
         localStorage.setItem("card", "[]");
     }
 
-    console.log(card);
 });
 
 
@@ -42,7 +140,7 @@ function addItemToCart(productId){
 addItemToCart(2);
 addItemToCart(3);*/
 
-
+/*
 function removeItemFromCart(productId){
     let temp =card.filter(item => item.id != productId);
     localStorage.setItem("card", JSON.stringify(temp));
@@ -76,4 +174,4 @@ function geTotal(){
 
     console.log(sum);
 }
-    getTotal(); 
+    getTotal(); */
