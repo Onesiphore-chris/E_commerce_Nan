@@ -13,7 +13,8 @@ function addForm(){
         e.preventDefault();
     })
 
-    log.addEventListener("click", ()=>{
+    log.addEventListener("click", (e)=>{
+
         let card =JSON.parse(localStorage.getItem("username")); 
         let isFound = false;
         console.log(card);
@@ -22,24 +23,34 @@ function addForm(){
             username: username.value,
             password: password.value,
         };
-        if(card != null){
-            console.log(card )
-            card.push(user);
-            localStorage.setItem("username", JSON.stringify(card));
-            isFound = true
-            console.log("ok");
+
+      
+        if(email.value != '' && username.value !='' && password.value != ''){
+           
+            if(card != null){
+
+                card.push(user);
+                localStorage.setItem("username", JSON.stringify(card));
+                isFound = true;
+
+            }else{
+                card = [];
+                card.push(user);
+                localStorage.setItem("username", JSON.stringify(card));
+        
+                isFound = true;
+            }
+            console.log(isFound)
+        
+            if(isFound === true){
+                window.location.href="./login.html";
+            }
         }else{
-            card = [];
-            card.push(user);
-            localStorage.setItem("username", JSON.stringify(card));
-             isFound = true
-          
+            result.textContent = "remplir les champs"
         }
-        console.log(isFound)
-    
-        if(isFound === true){
-            window.location.href="../login.html";
-        }
+            
+      
+       
     })
    
 }

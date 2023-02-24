@@ -74,8 +74,11 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
 
 
 
-
-
+function  recupIp(){
+    let recuper = localStorage.getItem("myObjet")
+    console.log(recuper)
+}
+recupIp()
 
 
 
