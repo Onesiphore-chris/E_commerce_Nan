@@ -846,6 +846,16 @@ section{
         .home .slide h3{
             font-size: 3rem;
         }
+        .pub{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .pub .h3{
+            font-size: 2rem;
+
+        }
         .quick{
             flex-flow: column;
             text-align: center;
@@ -943,12 +953,30 @@ section{
     }
     @media (max-width:242px){
         html{
-            font-size: 30%;
+            font-size: 25%;
+        }
+        .header{
+            padding: 1rem 1.5rem;
+        }
+        .navbar{
+            position: absolute;
+            top: 99%; left: 0; right: 0;
+            background: var(--white);border-top: var(--border);
+            border-bottom: var(--border);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+            
+        }
+        .navbar.active{
+            clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
+        }
+        .navbar a{
+            display: block;
+            margin: 1rem;
         }
     }
     
 }
-
 
 /*
 

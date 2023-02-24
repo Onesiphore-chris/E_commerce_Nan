@@ -159,7 +159,7 @@ let done = [
     <img src="${done[i].photoB}" class="hover-img" alt="${done[i].name}">
     </div>
     <div class="icons">
-    <a href="#" class="fas fa-shopping-cart" onclick="addToCart" id="shopping">${done[i].id}</a>
+    <a href="#" class="fas fa-shopping-cart" id="shopping">${done[i].id}</a>
     <a href="#" class="fas fa-search-plus"></a>
     <a href="#" class="fas fa-heart"></a>
     <a href="#" class="fas fa-share"></a>
@@ -167,7 +167,7 @@ let done = [
     <div class="content">
     <h3>${done[i].name}</h3>
     <div class="price">
-    ${done[i].rade}<button onclick ="" class"btnP">${done[i].addJ}</button>
+    ${done[i].rade}<button onclick ="" class"btnP">${done[i].addJ   }</button>
     </div>
     <div class="stars">
     <i class="fas fa-star"></i>
@@ -199,8 +199,10 @@ const getCart = id => cart.indexOf(cart.find(done => done.id === id));
 let shopping = document.getElementById('shopping');
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 const popCart = () =>{
-    console.log();
+    $("header .card .fa-cart-shopping span").text(cart.reduce((accu, done) => accu += done.qty));
+   
 }
+popCart();
 
     
 shopping.addEventListener('click', () =>{
