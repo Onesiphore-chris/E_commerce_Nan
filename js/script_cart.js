@@ -37,7 +37,7 @@ let done = [
         rade: '1314$',
        addJ: '123$',
         photo:'images/costume-2.webp',
-        photoB:'images/costume.webp,',
+        photoB:'images/costume.webp',
         qty:''
     },
     {
@@ -206,7 +206,32 @@ recup.innerHTML += affiche;
 
 }
 
+function recuP(){
 
+    let action = localStorage.getItem('myObjet');
+
+    let ajout = document.getElementById('pannier');
+
+
+       action = JSON.parse(action);
+
+       let count = action.length;
+
+       localStorage.getItem(count);
+
+       if(action  == null){
+           ajout.textContent = 0;
+
+       }else{
+           count = action.length;
+           ajout.textContent = count;  
+
+        
+    }
+
+   
+   }
+recuP()
 
 
  function buttonClick(){
@@ -237,15 +262,19 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
                 objet = [];
                 objet.push(myObjet);
                 window.localStorage.setItem("myObjet", JSON.stringify(objet));
+                recuP();
             }else{
                 objet = JSON.parse(objet);
                 objet.push(myObjet);
                 window.localStorage.setItem("myObjet", JSON.stringify(objet));
+                recuP();
 
             }
-        console.log(cart);
 
     }));
+
+
+
 
 }
  buttonClick();
@@ -253,7 +282,7 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
 
 
 
-
+    
 
 
 
