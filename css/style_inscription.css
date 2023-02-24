@@ -8,7 +8,9 @@
   outline: none;
   text-decoration: none; transition: all .2s linear;
 }
-
+.box{
+  cursor: pointer;
+}
 html{
   font-size:62.5%;
 /*  overflow: hidden;*/
@@ -301,7 +303,7 @@ input {
   }
 }
 
-@media (max-width:320px){
+@media (max-width:352px){
   html{
       font-size: 40%;
   }
@@ -349,6 +351,12 @@ input {
   .content form .inputBox input{
       width: 100%;
   }
+  @media (max-width:242px){
+    html{
+        font-size: 30%;
+    }
+}
+
 }
 
 /*

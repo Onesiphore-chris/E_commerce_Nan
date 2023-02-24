@@ -13,6 +13,11 @@
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
 }
+
+
+.box{
+    cursor: pointer;
+}
 /*
 @mixin grid($val){
     display: grid;
@@ -421,6 +426,42 @@ section{
     text-transform: capitalize;
     line-height: 1.5;
 }
+.content .pub{
+    background: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15rem;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+.content .pub h3{
+    color: var(--white);
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+.content .pub .card{
+    background: var(--white);
+    height: 6rem;
+    position: relative;
+    
+    
+}
+
+.content .pub .card a{
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+   
+}
 
 .box-container{
     /*
@@ -775,8 +816,15 @@ section{
             clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
         }
         .navbar a{
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             margin: 2rem;
+            color: var(--white);
+            background: var(--black);
+            width: 20%;
+            border-radius: .9rem;
+            text-align: center;
         }
 
         
@@ -844,7 +892,8 @@ section{
     }
 }
 
-@media (max-width:320px){
+
+@media (max-width:352px){
     html{
         font-size: 40%;
     }
@@ -892,6 +941,12 @@ section{
     .content form .inputBox input{
         width: 100%;
     }
+    @media (max-width:242px){
+        html{
+            font-size: 30%;
+        }
+    }
+    
 }
 
 

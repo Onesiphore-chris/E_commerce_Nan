@@ -49,7 +49,9 @@
     outline: none;
     text-decoration: none; transition: all .2s linear;
 }
-
+.box{
+    cursor: pointer;
+}
 html{
     font-size:62.5%;
   /*  overflow: hidden;*/
@@ -494,7 +496,7 @@ section{
 
 }
 
-.shop .box-container .box .content .price span{
+.shop .box-container .box .content .price button{
     background: var(--main);
     font-size: 1.5rem;
     color: var(--light-color);
@@ -735,7 +737,7 @@ section{
     }
 }
 
-@media (max-width:320px){
+@media (max-width:352px){
     html{
         font-size: 40%;
     }

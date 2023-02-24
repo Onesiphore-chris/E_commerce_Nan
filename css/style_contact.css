@@ -56,6 +56,9 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 
+} 
+.box{
+    cursor: pointer;
 }
 html::-webkit-scrollbar{
     width: 1rem;
@@ -746,7 +749,7 @@ section{
     }
 }
 
-@media (max-width:320px){
+@media (max-width:352px){
     html{
         font-size: 40%;
     }
@@ -794,6 +797,12 @@ section{
     .content form .inputBox input{
         width: 100%;
     }
+    @media (max-width:242px){
+        html{
+            font-size: 30%;
+        }
+    }
+    
 }
 
 
