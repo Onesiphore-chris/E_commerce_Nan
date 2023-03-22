@@ -18,9 +18,6 @@ document.querySelector('#login-btn').onclick = () =>{
     loginForm.classList.toggle('active');
     searchForm.classList.remove('active');
     navbar.classList.remove('active');
-    
-
-    
 };
 
 document.querySelector('#info-btn').onclick = () =>{
